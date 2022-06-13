@@ -33,15 +33,15 @@ export const CustomFooter = () => {
         {!smallScreen && (
           <>
             <Col flex="auto" />
-            {footerElements.map((elem, index) => {
-              return (
-                <Col key={index + ''}>
-                  <Link external to={elem.link}>
-                    {elem.description}
-                  </Link>
-                </Col>
-              );
-            })}
+            {/*{footerElements.map((elem, index) => {*/}
+            {/*  return (*/}
+            {/*    <Col key={index + ''}>*/}
+            {/*      <Link external to={elem.link}>*/}
+            {/*        {elem.description}*/}
+            {/*      </Link>*/}
+            {/*    </Col>*/}
+            {/*  );*/}
+            {/*})}*/}
           </>
         )}
         <Col flex="auto">{/*  <DexProgramSelector />*/}</Col>

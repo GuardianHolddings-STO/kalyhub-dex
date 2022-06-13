@@ -215,25 +215,25 @@ export default function StandaloneBalancesDisplay() {
         onClose={() => setBaseOrQuote('')}
       />
       <div style={{ textAlign: 'center', paddingTop: 32, display: window.innerWidth>540 ? 'block':'none' }}>
-        <img src={logo1} alt="" />
-        <div style={{ paddingTop: 20, fontSize: 16, color: '#F1F1F2' }}>
-          First time trading
-        </div>
-        <div style={{ fontSize: 16, color: '#F1F1F2' }}>
-          on Raydium?
-        </div>
-        <a
-          href={'https://raydium.gitbook.io/raydium/'}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color : 'rgb(173,175,184)',}}
-        >
-        <div style={{ paddingTop: 16, fontSize: 12, color: '#5AC4BE' }}>
+        {/*<img src={logo1} alt="" />*/}
+        {/*<div style={{ paddingTop: 20, fontSize: 16, color: '#F1F1F2' }}>*/}
+        {/*  First time trading*/}
+        {/*</div>*/}
+        {/*<div style={{ fontSize: 16, color: '#F1F1F2' }}>*/}
+        {/*  on Raydium?*/}
+        {/*</div>*/}
+        {/*<a*/}
+        {/*  href={'https://raydium.gitbook.io/raydium/'}*/}
+        {/*  target="_blank"*/}
+        {/*  rel="noopener noreferrer"*/}
+        {/*  style={{ color : 'rgb(173,175,184)',}}*/}
+        {/*>*/}
+        {/*<div style={{ paddingTop: 16, fontSize: 12, color: '#5AC4BE' }}>*/}
 
-            see how it works
+        {/*    see how it works*/}
 
-        </div>
-      </a>
+      {/*  </div>*/}
+      {/*</a>*/}
       </div>
     </FloatingElement>
   );

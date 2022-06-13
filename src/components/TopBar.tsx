@@ -35,49 +35,50 @@ const MENU = [
   },
   {
     'title': 'Swap',
-    'link': 'https://raydium.io/swap/',
+    'link': 'javascript:alert("준비중입니다.")',
   },
   {
     'title': 'Liquidity',
-    'link': 'https://raydium.io/liquidity/add/',
+    'link': 'javascript:alert("준비중입니다.")',
   },
   {
     'title': 'Pools',
-    'link': 'https://raydium.io/pools/',
+    'link': 'javascript:alert("준비중입니다.")',
   },
-  {
-    'title': 'Farms',
-    'link': 'https://raydium.io/farms/',
-  },
+  // {
+  //   'title': 'Farms',
+  //   'link': '/',
+  // },
   {
     'title': 'Staking',
-    'link': 'https://raydium.io/staking/',
+    'link': 'javascript:alert("준비중입니다.")',
   },
-  {
-    'title': 'AcceleRaytor',
-    'link': 'https://v1.raydium.io/acceleRaytor/',
-  },
-  {
-    'title': 'DropZone',
-    'link': 'https://dropzone.raydium.io/',
-  },
+  // {
+  //   'title': 'AcceleRaytor',
+  //   'link': '/',
+  // },
+  // {
+  //   'title': 'DropZone',
+  //   'link': '/',
+  // },
   {
     'title': 'NFTs',
-    'child': [
-      {
-        'title': 'Browse NFTs',
-        'link': 'https://nft.raydium.io/marketplace'
-      },
-      {
-        'title': 'Explore Collections',
-        'link': 'https://nft.raydium.io/collections'
-      },
-    ]
+    'link': 'javascript:alert("준비중입니다.")',
+    // 'child': [
+    //   {
+    //     'title': 'Browse NFTs',
+    //     'link': '/',
+    //   },
+    //   {
+    //     'title': 'Explore Collections',
+    //     'link': '/',
+    //   },
+    // ]
   },
-  {
-    'title': 'Migrate',
-    'link': 'https://raydium.io/migrate/',
-  },
+  // {
+  //   'title': 'Migrate',
+  //   'link': '/',
+  // },
   
 ]
 
@@ -152,16 +153,19 @@ export default function TopBar() {
   
     const { SubMenu } = Menu;
 
+    // target={itemChild.link.startsWith('/') ? '_self' : '_blank'}
+
   const menuDiv = 
   <Menu mode="horizontal" defaultSelectedKeys={['Trading']} style={{fontSize: '16px', display: 'flex', justifyContent: 'center',background: '#0F1429'}} selectable={false} >
     {MENU.map(item => {
-      if (item.child === undefined) {
-        return <Menu.Item key={item.title}><a href={item.link} target={item.link.startsWith('/') ? '_self' : '_blank'} rel="noopener noreferrer">{item.title}</a></Menu.Item>
-      } else {
-        return <SubMenu key={item.title} title={item.title}>
-          {item.child.map(itemChild => <Menu.Item key={itemChild.title}><a href={itemChild.link} target={itemChild.link.startsWith('/') ? '_self' : '_blank'} rel="noopener noreferrer">{itemChild.title}</a></Menu.Item>)}
-        </SubMenu>
-      }
+      // if (item.child === undefined) {
+      //   return <Menu.Item key={item.title}><a href={item.link} rel="noopener noreferrer">{item.title}</a></Menu.Item>
+      // } else {
+      //   return <SubMenu key={item.title} title={item.title}>
+      //     {item.child.map(itemChild => <Menu.Item key={itemChild.title}><a href={itemChild.link} rel="noopener noreferrer">{itemChild.title}</a></Menu.Item>)}
+      //   </SubMenu>
+      // }
+        return <Menu.Item key={item.title}><a href={item.link} rel="noopener noreferrer">{item.title}</a></Menu.Item>
     }
     )}
     </Menu>
