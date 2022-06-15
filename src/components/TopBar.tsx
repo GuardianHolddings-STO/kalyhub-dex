@@ -29,57 +29,34 @@ const LogoWrapper = styled.div`
 `;
 
 const MENU = [
-   {
+  {
     'title': 'Trading',
     'link': '/',
   },
   {
-    'title': 'Swap',
-    'link': 'javascript:alert("준비중입니다.")',
+    'title': 'INO',
+    'link': 'javascript:window.open("https://ino.klayhub.com/nfi","_blank");',
   },
   {
-    'title': 'Liquidity',
-    'link': 'javascript:alert("준비중입니다.")',
+    'title': 'MyNFT',
+    'link': 'javascript:window.open("https://www.klayhub.com/mynft","_blank");',
   },
   {
-    'title': 'Pools',
-    'link': 'javascript:alert("준비중입니다.")',
+    'title': 'Mint',
+    'link': 'javascript:window.open("https://www.klayhub.com/nft","_blank");',
   },
-  // {
-  //   'title': 'Farms',
-  //   'link': '/',
-  // },
   {
     'title': 'Staking',
-    'link': 'javascript:alert("준비중입니다.")',
+    'link': 'javascript:window.open("https://www.klayhub.com","_blank");',
   },
-  // {
-  //   'title': 'AcceleRaytor',
-  //   'link': '/',
-  // },
-  // {
-  //   'title': 'DropZone',
-  //   'link': '/',
-  // },
   {
-    'title': 'NFTs',
-    'link': 'javascript:alert("준비중입니다.")',
-    // 'child': [
-    //   {
-    //     'title': 'Browse NFTs',
-    //     'link': '/',
-    //   },
-    //   {
-    //     'title': 'Explore Collections',
-    //     'link': '/',
-    //   },
-    // ]
+    'title': 'Bank',
+    'link': 'javascript:window.open("/","_blank");',
   },
-  // {
-  //   'title': 'Migrate',
-  //   'link': '/',
-  // },
-  
+  {
+    'title': 'NFT',
+    'link': 'javascript:window.open("https://ino.klayhub.com/free","_blank");',
+  },
 ]
 
 export default function TopBar() {
